@@ -18,8 +18,8 @@ typedef struct {
 Command commands[] = {
 	{ "exit", "exits verbo", vExit },
 	{ "help", "helps you", vHelp },
-	{ "add", "helps you", vAdd }
-
+	{ "add", "helps you", vAdd },
+	{ "open", "helps you", vOpen }
 };
 
 void runCommand(char* input) {

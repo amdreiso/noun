@@ -5,5 +5,14 @@
 extern int programDestroy;
 int programDestroy = 0;
 
+typedef struct {
+	char* word;
+	char* translation;
+} Token;
+
+extern Token languageTokens[];
+Token languageTokens[] = {
+};
+
 #endif
 

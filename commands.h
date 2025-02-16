@@ -24,8 +24,28 @@ void vAdd() {
 
 	strcat(input, ".txt");
 
-	FILE *file = fopen(input, "w");
+	FILE *file = fopen(input, "wb");
+
 	fclose(file);
+}
+
+void vOpen() {
+
+	char input[50];
+
+	printf("file: ");
+	scanf("%49s", input);
+
+	strcat(input, ".txt");
+
+	FILE *file = fopen(input, "rb");
+
+	fread(languageTokens, sizeof(int), 10, file);
+
+	fclose(file);
+
+	printf("%s", languageTokens[0].word);
+
 }
 
 #endif
